@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+/* modem stylesheets version 1.0.0 */
+
+\:root {
+  font-size: 16px;
+}
+
+.modem {
+  display: grid;
+  grid-template-rows: auto 30px;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 0.625em;
+  height: 100vh;
+}
+
+.modem__footer {
+  background: {
+    color: pink;
+  }
+  // grid-row-start: 2;
+  // grid-column: 1/11;
+}

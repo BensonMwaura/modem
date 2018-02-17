@@ -6,6 +6,8 @@ import { AboutModule } from '../about/about.module';
 import { PressModule } from '../press/press.module';
 import { NotFoundModule } from '../not-found/not-found.module';
 
+import { FooterComponent } from './components/footer/footer.component';
+
 
 @NgModule({
   imports: [
@@ -15,6 +17,7 @@ import { NotFoundModule } from '../not-found/not-found.module';
     PressModule,
     NotFoundModule
   ],
-  declarations: []
+  declarations: [ FooterComponent ],
+  exports: [ FooterComponent]
 })
 export class CoreModule { }
