@@ -4,18 +4,42 @@
   font-size: 16px;
 }
 
+html, body {
+  margin: 0;
+}
+
 .modem {
   display: grid;
-  grid-template-rows: auto 30px;
   grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 30px auto;
   // grid-gap: 0.625em;
   height: 100vh;
+}
+
+.modem__nav {
+  grid-column: span 10;
+  // grid-row: 1;
+  background: {
+    color: #d271ff;
+  }
+}
+
+.modem__ad {
+  margin: 0;
+}
+
+.modem__content {
+  grid-column: span 10;
+  // grid-row: 2;
+  background: {
+    color: rgb(113, 113, 255);
+  }
 }
 
 .modem__footer {
   background: {
     color: pink;
   }
-  // grid-row-start: 2;
-  // grid-column: 1/11;
+  grid-column: span 10;
+  // grid-row: 3;
 }
